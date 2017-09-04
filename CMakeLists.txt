@@ -54,6 +54,12 @@ if(NOT EXISTS ${PROJECT_SOURCE_DIR}/.cppan)
     find_package(TIFF)
     find_package(ZLIB)
 
+	include_directories(${TIFF_INCLUDE_DIR})
+	include_directories(${ZLIB_INCLUDE_DIR})
+	include_directories(${JPEG_INCLUDE_DIR})
+	include_directories(${PNG_PNG_INCLUDE_DIR})
+
+
     find_package(PkgConfig)
 
     if (PKG_CONFIG_FOUND)
